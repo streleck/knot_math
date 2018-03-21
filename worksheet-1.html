@@ -20,19 +20,33 @@
 	<div class="content">
 		<p>Below are some knot names and cells for drawing. Feel free to use paper and pencil or even real rope instead. Paper and pen is my preferred method. Try to make the knots look good (by whatever criteria you like). This is important because to really 'get' knots, you must appreciate the beauty in them! You can reveal the answers by clicking the 'check answer' button. But if you don't try first, you will be cheating and will feel shame even though no one else will know.</p>
 		<div class="problem-box">
-			<canvas id="problem-1" data="canvas1">
+			<canvas id="problem-1" width="500" height="300" style="border: 1px solid #cccccc; cursor: url(images/pen_cursor.png), auto">
 			</canvas>
 			<img class="answer" id="answer-1" src="" alt="answer one">
 			<div class="worksheet-buttons">
-				<button type="button" class="pen">pen</button>
-				<button type="button" class="eraser">eraser</button>
-				<button type="button" class="letter">ABC</button>
-				<button type="button" class="clear">clear</button>
-				<button type="button" class="show-answer"></button>
+				<button type="button" class="pen" id="pen-1">pen</button>
+				<button type="button" class="eraser" id="eraser-1">eraser</button>
+				<button type="button" class="letter" id="letter-1">ABC</button>
+				<button type="button" class="clear" id="clear-1" data="problem-1">clear</button>
+				<button type="button" class="show-answer" id="show-answer-1" >show answer</button>
+			</div>
+		</div>
+
+		<div class="problem-box">
+			<canvas id="problem-2" width="500" height="300" style="border: 1px solid #cccccc; cursor: url(images/pen_cursor.png), auto">
+			</canvas>
+			<img class="answer" id="answer-2" src="" alt="answer one">
+			<div class="worksheet-buttons">
+				<button type="button" class="pen" id="pen-2">pen</button>
+				<button type="button" class="eraser" id="eraser-2">eraser</button>
+				<button type="button" class="letter" id="letter-2">ABC</button>
+				<button type="button" class="clear" id="clear-2" data="problem-2">clear</button>
+				<button type="button" class="show-answer" id="show-answer-1" >show answer</button>
 			</div>
 		</div>
 
 	</div>	
+
 </body>
-<script src="./javascript/worksheet1.js"></script>
+<script src="./javascript/worksheetz.js"></script>
 </html>

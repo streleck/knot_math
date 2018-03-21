@@ -34,14 +34,14 @@ function getMousePos(e, ctx) {
         mouseX = e.layerX;
         mouseY = e.layerY;
     }
-    console.log(mouseX + "," + mouseY);
+    return [mouseX, mouseY]
 }
 
 window.onclick = function(event){
 	//console.log(event.path[0].tagName);
 	if(event.path[0].tagName == "CANVAS"){
 		var ctx = event.path[0].getContext("2d");
-		getMousePos(event, ctx);
+		sketchpad_mouseMove(event);
 	}
 
 }
